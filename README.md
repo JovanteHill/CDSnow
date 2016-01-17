@@ -1,0 +1,2 @@
+# CDSnow
+This is a personal project I am working on currently. First you register and once the form is validated all info will be sent to a local server (wamp server) database to be stored. Then upon login the database will be queried to check and see if there is a user with that combination of "Username" and "Password". If not it will error, but if successful it will redirect you to the dashboard.
