@@ -1,0 +1,91 @@
+<?php
+		
+$con = mysqli_connect("localhost","root","","UserList");
+
+if (mysqli_connect_errno())
+
+{
+
+echo "MySQLi Connection was not established: " . mysqli_connect_error();
+
+}
+
+
+
+?>
+
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Signika' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="your_website_domain/css_root/flaticon.css">
+<link rel="stylesheet" type="text/css" href="style-accountAdmin.css">
+<title>CDS | Admin</title>
+</head>
+
+<body>
+
+	<div class="headerbar" id="headerbar">
+		<div class="logo">
+			<a href="#">CDS | <span>San Diego</span></a>
+		</div>
+		<!--Ends Logo-->
+	</div>
+	<!--Ends Header Bar-->
+	
+	<div class="container">
+		<div class="sidebar">
+			<ul class="nav">
+				<li><a class="active" href="Account-Dashboard.html">Dashboard</a></li>
+				<li><a href="Account-Employees.html">Employees</a></li>
+				<li><a href="#">Schedule</a></li>
+				<li><a href="#">Messages</a></li>
+				<li><a href="#">Phones</a></li>
+				<li><a href="#">Fleet</a></li>
+				<li><a href="#">Support</a></li>
+			</ul>
+		</div>
+		<!--Ends Sidebar-->
+		<div class="content-section" name="dashboard">
+			<h1>Dashboard</h1>
+			
+			<div class="newsbox" id="newsbox">
+				<div class="box-top" id="box-top">
+					<h3>News</h3>
+				</div>
+				<!--Ends Box Top-->
+				
+				<div class="box-panel" id="box-panel">
+					<p>Here you will see updates with the latest news for the employees.</p>
+				</div>
+				<!--Ends Box Panel-->
+			</div>
+			<!--Ends News Box-->
+			
+			<div class="newsupdate" id="newsupdate">
+				<div class="box-top" id="box-top">
+					<h3>Update News Feed</h3>
+				</div>
+				<!--Ends Box Top-->
+				
+				<div class="box-panel" id="box-panel">
+					<form action="#" method="post" accept-charset="utf-8" class="form" role="form" onsubmit="return validation()">
+						<div class="subject" id="news-subject">
+							<input type="text" name="newssubject" id="newssubject" class="form-control input-lg" placeholder="Subject" />
+						</div>
+						
+						<div class="content" id="news-content">
+							<textarea rows="10" cols="70" placeholder="Enter in message"></textarea>
+						</div>
+						
+						<input name="News-Update" type="submit" class="btn btn-lg btn-success btn-block" id="News-Update" value="Update">
+					</form>
+				</div>
+				<!--Ends Box Panel-->
+			</div>
+			<!--Ends News Update-->
+		</div>
+		<!--Ends Content Section-->
+	</div>
+
+</body>
+</html>
